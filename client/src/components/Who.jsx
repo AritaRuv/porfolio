@@ -1,7 +1,9 @@
 import { Text, Box } from "@chakra-ui/react";
+import { useState } from "react";
 
 
 function Who(){
+    const [text, setText] = useState('WHO')
 
     return(
         <>
@@ -10,9 +12,17 @@ function Who(){
         fontFamily={'sans-serif'}
         fontWeight={'extrabold'}
         fontSize={'100px'}
-        >WHO</Text>
+        onMouseEnter={()=>setText('ABOUT')}
+        onMouseLeave={()=>setText('WHO')}
+        userSelect={'none'}
+        _hover={{
+            color: '#B2C413'
+        }}
+        >{text}</Text>
         </Box>
         </>
     )
 }
 export default Who
+
+
