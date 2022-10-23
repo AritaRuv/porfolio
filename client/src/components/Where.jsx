@@ -5,15 +5,13 @@ import { useState } from "react";
 function Where(){
     const [text, setText] = useState('WHERE')
 
-
-
     return(
         <>
-        <Box>
+        <Box maxW={'min-content'}>
         <Text
         fontFamily={'sans-serif'}
         fontWeight={'extrabold'}
-        fontSize={'100px'}
+        fontSize={'15vh'}
         onMouseEnter={()=>setText('CONTACT')}
         onMouseLeave={()=>setText('WHERE')}
         userSelect={'none'}

@@ -5,7 +5,7 @@ function NavBar(){
     return(
         <>
         <Box
-        h={'9vh'}
+        h={'8vh'}
         >
         <IconButton
         variant={'unstyled'}

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import LandingPage from './views/LandingPage';
-import About from './views/About.jsx'
+import About from './views/About.jsx';
 
 function App() {
   return (

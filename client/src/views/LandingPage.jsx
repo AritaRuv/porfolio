@@ -2,18 +2,25 @@ import How from '../components/How';
 import Who from '../components/Who';
 import Navbar from '../components/NavBar';
 import Where from '../components/Where';
-import { Box } from '@chakra-ui/react';
+import Footer from '../components/Footer'
+import { Flex } from '@chakra-ui/react';
 
 
 function LandingPage(){
     return(
       <>
       <Navbar/>
-        <Box pl={'10vh'} spacing={'20vh'}>
+        <Flex 
+          flexDir={'column'} 
+          pl={'10vh'} 
+          h={'81vh'} 
+          placeContent={'end'} 
+          >
             <Who/>
             <How/>
             <Where/>
-        </Box>
+        </Flex>
+        <Footer/>
       </>
     )
 }
