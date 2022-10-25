@@ -2,10 +2,11 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import LandingPage from './views/LandingPage';
 import About from './views/About.jsx';
+import theme from './theme';
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <BrowserRouter>
         <div className='app'>
           <Routes>
