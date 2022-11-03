@@ -1,13 +1,20 @@
 import { Text, Box } from "@chakra-ui/react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 function Where(){
     const [text, setText] = useState('WHERE')
 
     return(
-        <>
-        <Box maxW={'min-content'}>
+        <Box>
+        <Box 
+        maxW={'min-content'}
+        as={motion.div}
+        initial={{x: '-200vh'}}
+        animate={{x: 0}}
+        transitionDuration='400ms'
+        transitionDelay='400ms'>
         <Text
         fontFamily={'sans-serif'}
         fontWeight={'extrabold'}
@@ -20,7 +27,7 @@ function Where(){
         }}
         >{text}</Text>
         </Box>
-        </>
+        </Box>
     )
 }
 export default Where

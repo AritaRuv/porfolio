@@ -1,10 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
-import "@fontsource/caveat"
+import "@fontsource/liu-jian-mao-cao"
 
 
 const theme = extendTheme({
     fonts: {
-        body: `"Caveat", cursive`
+        body: `"Liu Jian Mao Cao", cursive`
     }
 })
 

@@ -3,12 +3,9 @@ import {
     chakra,
     Container,
     Stack,
-    Text,
-    useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
   import { FaGithub, FaLinkedinIn, FaGoogle } from 'react-icons/fa';
-  import { ReactNode } from 'react';
   
   
   const SocialButton = ({children, label, href}) => {
